@@ -410,21 +410,26 @@ span{
     margin-left: 5px;
     color: gray;
 }
-top-img {
-    position: absolute; /* Position relative to the .card-foreground */
-    top: 10px; /* Distance from the top edge */
-    right: 10px; /* Distance from the right edge */
-    width: 40px; /* Set the width */
-    height: 40px; /* Set the height */
-    overflow: hidden; /* Ensure the image fits within the rounded container */
-    border-radius: 50%; 
+/* Styling for the rounded image */
+.top-img {
+    position: absolute; 
+    top: -15px; 
+    left: -30px;
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
 .top-img img {
-    width: 100%; /* Ensure image fills the container */
-    height: 100%;
-    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
+
 
 
 .card-container1 {
@@ -450,12 +455,18 @@ top-img {
 }
 
 .card-background {
-    background-color:#eeebeb; 
-    z-index: 2; 
+    background-color: #eeebeb; 
+    z-index: 1;
     top: 70px;
     left: 30px;
-    bottom: 5px;
-   
+    
+    padding: 20px; /* Added padding for better text spacing */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+}
+.card-background h2, .card-background p {
+    margin: 0;
+    color: #333;
+    bottom: -10px;
 }
 .card-back>h5,p{
     top: 100px;
@@ -469,6 +480,15 @@ top-img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .card-foreground >p{
+    margin-top: 20px;
+    color: rgb(89, 86, 86);
+}
+.card-foreground >h5{
+   margin-top: 15px;
+   
+}
+.card-foreground >h6{
+   margin-top: 5px;
     color: rgb(89, 86, 86);
 }
 
