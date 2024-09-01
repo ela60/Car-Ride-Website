@@ -1,0 +1,19 @@
+/* Responsive styles for mobile devices (up to 576px) */
+@media (max-width: 576px) {
+    .top-bar {
+        flex-direction: column; 
+    }
+
+    .left-top {
+        margin-top: 15px;
+        margin-left: 0; 
+    }
+
+    .left-top2 {
+        margin-left: 0; 
+    }
+    .Follow {
+      margin-left: 8px;
+      
+    }
+}
