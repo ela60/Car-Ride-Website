@@ -9,7 +9,7 @@
     font-style: normal;
   }
 
-
+/* nav bar start here */
   /* Top bar */
   .top-bar{
     display: flex;
@@ -134,17 +134,30 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #f0f0f0;
+    background-color: #FCFCFC;
 }
 
 .banner-left, .banner-right {
     display: flex;
     flex-direction: column;
+    
 }
-.banner-left{
-    margin-left: 80px;
+.banner-left {
+    margin-left: 80px; 
+    background-image: url("/image/bg.png"); 
+    background-size: cover; background-position: center;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 500px; 
+    position: relative; 
+    opacity: .12;
 }
-.banner-left > h1 {
+.banner-text{
+    margin-top: 150px;
+    margin-left: 30px;
+}
+
+.banner-text > h1 {
     font-size: 34px;
     font-weight: 900;
     line-height: 2.5rem;
@@ -165,15 +178,75 @@ span{
     color: rgb(38, 141, 38);
 }
 
-/* Optional: Style for the icon-container */
-.icon-container {
-    margin-top: 20px;
+/* banner right */
+.banner-right {
+    background: linear-gradient(to bottom, #4AC87E, #A7DDBDD6);
+    height: 450px;
+    width: 320px;
+    border-radius: 15px;
+    margin-right: 150px;
+    margin-top: 50px;
+    position: relative; 
+    overflow: visible; 
+}
+.banner-right img {
+    width: 100%;
+    height: auto;
+    display: block;
+     margin-top: 60px;
+     margin-left: -110px;
+     width: 500px;
+    position: absolute;
+}
+.driver {
+    position: absolute; 
+    top: 390px; 
+    left: 190px;
+    width: 60px; 
+    height: 60px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
 }
 
-.hero-image img {
-    max-width: 666px;
-    height: auto;
+.driver img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 50%;  
 }
+
+/* banner box style */
+/* Section Styles */
+box {
+    position: relative;
+    width: 10px;
+    height: 10px; 
+    padding: 20px; 
+    box-sizing: border-box;
+}
+
+/* Banner Box Styles */
+.banner-box {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    position: absolute; 
+    top: 500px; 
+    left: 110px; 
+    width: 800px; 
+    height: 90px; 
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+
+
+
 
 /* section card */
 .first-card{
@@ -238,22 +311,26 @@ span{
 
 
 .card {
-    
-    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 10px;
+    padding: 10px ;
+    border-radius: 10px;
+}
+.card-bg{
+    border-radius: 10;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+    width: calc(100% + 20px); 
+    display: block; 
+    margin-left: -10px; 
+    margin-right: -10px; 
+    margin-top: -10px;
 }
 
 .card-red-bg img {
     background-color: rgb(241, 55, 55);
-    object-fit: cover; /* Ensure the image covers the container */
+    object-fit: cover; 
     border-radius: 8px;
 }
 .card-red-bg4 img {
@@ -296,22 +373,24 @@ span{
     flex: 1; 
     padding: 20px;
     color: white; 
-    margin-left: 150px;
+    margin-left: 200px;
 }
 
 .green-left h2 {
+    top: 230px;
     font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .green-left p {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .green-left button {
     background-color: #ffffff;
-    
+    color: black;
+    margin-left: -2px;
     border: none;
     padding: 12px 20px;
     border-radius: 5px;
@@ -375,7 +454,7 @@ span{
 }
 
 .green-left::before {
-    top: 20%;
+    top: 30%;
     left: 100px;
     width: 70px;
     height: 70px;
@@ -384,11 +463,13 @@ span{
 }
 
 .green-left::after {
-   rotate: ;
-    left: -10px; 
-    width: 180px;
-    height: 40px;
-    border-radius: 0 0 50% 50%; 
+    top: 50%;
+    left: -80px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50% ; 
+    transform: translateY(-50%);
+    overflow: hidden;
 }
 
 /* testimonial  style*/

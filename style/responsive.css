@@ -12,3 +12,137 @@
     .social-icon {
         margin: 5px;
     }
+
+
+
+    /* General Top Bar Styles */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+    background-color: #4AC87E;
+    color: #FFFFFF;
+}
+
+.left-top {
+    margin-left: 100px;
+}
+
+.number, .mail {
+    margin-left: 12px;
+    margin-top: -3px;
+}
+
+.left-top2 {
+    margin-left: 50px;
+}
+
+.right-top {
+    margin-right: 100px;
+}
+
+.left-top, .right-top {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.left-top1, .left-top2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.social {
+    padding: 7px;
+    margin-top: -3px;
+}
+
+.Follow {
+    margin-right: 7px;
+}
+
+/* Responsive Styles for Tablets (up to 768px) */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .left-top, .right-top {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .left-top {
+        margin-left: 0;
+    }
+
+    .right-top {
+        margin-right: 0;
+    }
+
+    .left-top2 {
+        margin-left: 0;
+    }
+
+    .number, .mail {
+        margin-left: 0;
+    }
+
+    .social {
+        padding: 5px;
+    }
+
+    .Follow {
+        margin-right: 5px;
+    }
+}
+
+/* Responsive Styles for Mobile (up to 576px) */
+@media (max-width: 576px) {
+    .top-bar {
+        padding: 8px;
+    }
+
+    .left-top, .right-top {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .left-top {
+        margin-left: 0;
+    }
+
+    .right-top {
+        margin-right: 0;
+    }
+
+    .left-top2 {
+        margin-left: 0;
+    }
+
+    .number, .mail {
+        margin-left: 0;
+    }
+
+    .social {
+        padding: 3px;
+        margin-top: 0;
+    }
+
+    .Follow {
+        margin-right: 3px;
+    }
+}
+
+
+
+
+}
