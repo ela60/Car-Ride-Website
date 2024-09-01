@@ -212,6 +212,9 @@ span{
     padding: 20px;
     text-align: center;
 }
+.card-1{
+    margin-top: 16px;
+}
 .card-2{
     background-color: #F9F9F9C2;
 }
@@ -393,7 +396,7 @@ span{
     display: flex;
     justify-content: space-between; 
     align-items: flex-start; 
-    padding: 20px;
+    padding: 50px;
     margin: 60px;
 }
 
@@ -401,6 +404,12 @@ span{
     flex: 1; 
     padding-right: 20px;
     margin-left: 100px; 
+    font-weight: 600;
+}
+.text-left>h2{
+    margin-top: 17px;
+    line-height: 2.5rem;
+    
 }
 .round-icon{
     font-size: 6px;
@@ -408,7 +417,7 @@ span{
 }
 .empty{
     margin-left: 5px;
-    color: gray;
+    color: rgb(198, 192, 192);
 }
 /* Styling for the rounded image */
 .top-img {
@@ -455,18 +464,26 @@ span{
 }
 
 .card-background {
-    background-color: #eeebeb; 
+    background-color: #f7f3f3; 
+    border: 1px solid #BBBBBB;
     z-index: 1;
     top: 70px;
     left: 30px;
-    
-    padding: 20px; /* Added padding for better text spacing */
-    box-sizing: border-box; /* Ensure padding does not affect width */
+    padding: 20px; 
+    box-sizing: border-box;
 }
-.card-background h2, .card-background p {
-    margin: 0;
-    color: #333;
-    bottom: -10px;
+.card-background h5
+ {   position: absolute;
+    margin-top: 50px;
+    color:#19191B;
+    
+}
+ .card-background p {  
+     position: absolute;
+    margin-top: 70px;
+    font-size: 14px;
+    color: #646464;
+    
 }
 .card-back>h5,p{
     top: 100px;
@@ -491,4 +508,189 @@ span{
    margin-top: 5px;
     color: rgb(89, 86, 86);
 }
+
+/* Box on the footer style */
+
+/* Section Styling */
+.flex-container {
+    position: absolute;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 290px;
+    width: 800px;
+    height: 170px;
+    padding: 25px 80px; 
+    border-radius: 7px; 
+ background: linear-gradient(to right, #87E8AF, #AED4BE);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual depth */
+}
+
+/* Text Content Styling */
+.text-content {
+    flex: 1; 
+    margin-left: 20px; 
+}
+
+.text-content h2 {
+    margin-top: 0;
+}
+
+.text-content p {
+    margin-top: 13px;
+    line-height: 1.2;
+    color: #646464;
+}
+/* Button Container Styling */
+
+
+/* Button Styling */
+button {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #29AF60;
+    border: none;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* footer get started part */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #FFFFFFCC;
+}
+
+.footer-section {
+    margin-top: 180px;
+    padding: 50px 0px 50px 100px;
+    background-color: #2B2B2B;
+}
+
+.hr-p {
+    margin-left: 50px;
+    color: #FFFFFFCC;
+}
+
+/* footer started style */
+.started {
+    display: flex;
+}
+.footer-info{
+    margin-left: 50px;
+}
+.footer-info>h1{
+    color: #FFFFFF;
+    margin-top: 12px;  
+}
+.footer-info>p{
+    margin-top: 30px;
+    line-height: 1.4rem;
+    color: #FFFFFFCC;
+}
+
+.options {
+    display: flex;
+    list-style-type: none;
+    font-weight: 20px;
+    font-size: 23px;
+    margin-right: 90px;
+    gap: 3rem;
+}
+
+.footer-links {
+    margin-top: 7px;
+    display: flex;
+    margin-right: 50px;
+}
+
+.get-started {
+    padding: 0;
+}
+
+.h5-footer {
+    margin-left:-24px ;
+    padding: 20px;
+    font-size: 1.5em;
+    color: #ece8e8;
+}
+
+.options .link {
+    list-style-type: none;
+    padding: px 0;
+    margin: 0;
+}
+
+.footer-section hr {
+    margin: 2rem;
+    width: 90%;
+    border: 1px solid #b1abab;
+}
+/* footer hr style */
+
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* Footer Text */
+.footer-text {
+    flex: 1;
+}
+
+/* Social Media Icons */
+.footer-social {
+    flex-shrink: 0;
+    color: #4AC87E;
+    margin-right: 150px;
+}
+
+.social-icon {
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #ccc; 
+}
+
+
+
+
+
+/* Icon Container */
+.icon-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    border: 1px solid black; 
+    padding: 10px; 
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+
 
