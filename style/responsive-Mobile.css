@@ -32,43 +32,27 @@
     padding: 10px 20px; 
     height: auto; 
 }
-.navbar1{
-    display: none;
-}
+
 
 /* Logo Styles */
 .logo {
     font-size: 1.2em; 
-    margin: 0; 
+    margin-left:16px;
+    margin-bottom: 5px; 
     width: 100%; /* Make logo take full width */
 }
 
 /* List Container Styles */
-.list {
-    
-    flex-direction: column;
+
+.list{
+    display: none;
 }
 
-.list ul {
-    
-    flex-direction: column; 
-    margin-top: 5px;
-    margin-right: 270px;
-     
-}
-
-.list li {
-    margin: 5px 0; 
-   
+.navbar1{
+    display: none;
 }
 
 
-/* Dropdown Menu */
-.list .dropdown {
-    display: flex;
-   
-    margin-top: 5px; 
-}
 
 /* Hide navbar1 and show hamburger menu */
 
@@ -78,7 +62,7 @@
     color: #4AC87E;
     cursor: pointer;
     align-self: flex-end;
-    margin-top: 0px;    
+    margin-top: -30px;    
     margin-right: 20px;
 }
 .hamburger-menu-medium {
@@ -107,8 +91,9 @@
 }
 
 .banner-text > h1 {
-    font-size: 24px; 
-    line-height: 1.5rem; 
+    font-size: 2rem; 
+    line-height: 1.8rem; 
+    margin-bottom: 5px;
 }
 /* banner right responsive */
 .banner-right {
@@ -196,7 +181,7 @@
     }
     .card-header p {
         font-size: 0.75rem;
-        padding: 0 100px;
+        padding: 5px 20px ;
     }
     /* .green responsive */
 
@@ -266,6 +251,13 @@
         margin-left: 0; 
         font-weight: 600; 
         margin-bottom: 30px;
+    }
+    .card-container1{
+       width: 200px; 
+       font-size: 12px;
+       margin-left: 0;
+       margin-right: 0;
+       
     }
     /* footer top box responsive */
     .flex-container {
@@ -371,6 +363,10 @@
     .social-icon {
         font-size: 18px; 
         margin: 0 8px; 
+    }
+    .footer-container{
+        display: flex;
+        flex-direction: column;
     }
     
 }
