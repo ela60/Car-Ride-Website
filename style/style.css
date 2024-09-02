@@ -9,6 +9,11 @@
     font-style: normal;
   }
 
+  /* Responsive layout */
+.ham-burger {
+    display: none;
+}
+
 /* nav bar start here */
   /* Top bar */
   .top-bar{
@@ -692,7 +697,7 @@ box {
     padding: 25px 80px; 
     border-radius: 7px; 
  background: linear-gradient(to right, #87E8AF, #AED4BE);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for visual depth */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 /* Text Content Styling */
