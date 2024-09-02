@@ -10,8 +10,8 @@
   }
 
   /* Responsive layout */
-.ham-burger {
-    display: none;
+  .hamburger-menu-mobile, .hamburger-menu-medium {
+    display: none; 
 }
 
 /* nav bar start here */

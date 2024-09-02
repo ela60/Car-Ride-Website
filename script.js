@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     
     const greenButton = document.querySelector('.green-button');
@@ -92,6 +90,24 @@ document.addEventListener('DOMContentLoaded', () => {
     if (footerLinkedin) {
         footerLinkedin.addEventListener('click', () => {
             alert('You clicked the LinkedIn icon!');
+        });
+    }
+    const mobileMenu = document.querySelector('.hamburger-menu-mobile');
+    if (mobileMenu) {
+        const mobileButton = mobileMenu.querySelector('.hamburger-icon');
+        mobileButton.addEventListener('click', () => {
+            
+            mobileMenu.classList.toggle('active');
+        });
+    }
+
+    
+    const mediumMenu = document.querySelector('.hamburger-menu-medium');
+    if (mediumMenu) {
+        const mediumButton = mediumMenu.querySelector('.hamburger-icon');
+        mediumButton.addEventListener('click', () => {
+            
+            mediumMenu.classList.toggle('active');
         });
     }
 });

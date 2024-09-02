@@ -2,15 +2,10 @@
 /* Responsive styles for tablets (up to 768px) */
 @media (min-width: 577px ) and (max-width:768px) {
 
-
-
-    /* nav bar style  */
-    
-    .list {
-        display: none;
+    .hamburger-menu-mobile {
+        display: none; 
     }
-    
-    .ham-burger {
+    .hamburger-menu-medium {
         display: block;
         font-size: 26px;
         color: #4AC87E;
@@ -20,8 +15,11 @@
         margin-right: 20px; 
     }
 
+    /* nav bar style  */
     
-
+    .list {
+        display: none;
+    }
     /* banner section for tablet */
     
 .banner {

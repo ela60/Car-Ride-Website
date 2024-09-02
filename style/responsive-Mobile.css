@@ -32,6 +32,9 @@
     padding: 10px 20px; 
     height: auto; 
 }
+.navbar1{
+    display: none;
+}
 
 /* Logo Styles */
 .logo {
@@ -68,19 +71,20 @@
 }
 
 /* Hide navbar1 and show hamburger menu */
-.navbar1 {
-    display: none;
-}
 
-.ham-burger {
-    display: block;
+.hamburger-menu-mobile {
+    display: block; 
     font-size: 26px;
     color: #4AC87E;
     cursor: pointer;
     align-self: flex-end;
     margin-top: 0px;    
-    margin-right: 20px; 
+    margin-right: 20px;
 }
+.hamburger-menu-medium {
+    display: none; 
+}
+
 
 /* responsive banner */
 .banner{
